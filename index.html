@@ -1,6 +1,3 @@
-ML
-Copy
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -421,9 +418,6 @@ Copy
         }
 
         .project-card {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-xl);
             padding: var(--space-xl);
             background: var(--bg-secondary);
             border: 1px solid var(--border);
@@ -439,6 +433,10 @@ Copy
         .project-card.featured {
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-elevated) 100%);
             border-color: var(--border-light);
+        }
+        
+        .project-card .project-tech {
+            margin-top: var(--space-lg);
         }
 
         .project-badge {
@@ -783,10 +781,6 @@ Copy
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
-            .project-card {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 768px) {
@@ -1011,18 +1005,18 @@ Copy
                             Live Demo
                         </a>
                     </div>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">FastAPI</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">ChromaDB</span>
-                    <span class="tech-tag">LangChain</span>
-                    <span class="tech-tag">Claude API</span>
-                    <span class="tech-tag">RAG Pipeline</span>
-                    <span class="tech-tag">SSE Streaming</span>
-                    <span class="tech-tag">Vercel</span>
-                    <span class="tech-tag">Railway</span>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">ChromaDB</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Claude API</span>
+                        <span class="tech-tag">RAG Pipeline</span>
+                        <span class="tech-tag">SSE Streaming</span>
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">Railway</span>
+                    </div>
                 </div>
             </div>
 
